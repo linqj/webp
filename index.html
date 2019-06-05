@@ -1,0 +1,19 @@
+ <!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>图片显示</title>
+    <script>
+function check_support_webp() {
+    let isSupportWebp = document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0;
+    return isSupportWebp
+}
+let isSupportWebp = check_support_webp();
+alert(isSupportWebp)
+    </script>
+</head>
+<body>
+
+  
+</body>
+</html> 
